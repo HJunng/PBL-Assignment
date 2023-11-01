@@ -5,6 +5,16 @@
     <title>SAVE</title>
 </head>
 <body>
-
+<form action="/board/save" method="post">
+    writer <br>
+    <input type="text" name="boardWriter"> <br><br>
+    pass <br>
+    <input type="text" name="boardPass"> <br><br>
+    title <br>
+    <input type="text" name="boardTitle"> <br><br>
+    contents <br>
+    <textarea name="boardContents" cols="30" rows="10"></textarea> <br><br>
+    <input type="submit" value="글작성">
+</form>
 </body>
 </html>
