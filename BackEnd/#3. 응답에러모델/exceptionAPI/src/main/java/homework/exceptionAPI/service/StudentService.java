@@ -26,4 +26,9 @@ public class StudentService {
     public List<Student> getAll(){
         return studentRepository.getAll();
     }
+
+    // 특정 성적을 입력받아, 해당 성적의 학생들을 조회
+    public List<Student> getGradeStudent(int grade){
+        return studentRepository.get(grade);
+    }
 }

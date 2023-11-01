@@ -23,4 +23,11 @@ public class StudentRepository { // 데이터에 있는 걸 가져와서 붙이�
     public List<Student> getAll(){
         return studentSet.stream().sorted().collect(Collectors.toList());
     }
+
+    //특정 성적을 입력 받아, 해당 성적의 학생들을 조회
+    public List<Student> get(int grade){
+        return studentSet.stream()
+                .filter(student -> student.getGrade() == grade)
+                .collect(Collectors.toList());
+    }
 }
