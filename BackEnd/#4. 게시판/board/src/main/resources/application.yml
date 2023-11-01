@@ -27,6 +27,9 @@ spring:
     output:
       ansi:
         enabled: always
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.H2Dialect
   # ???? ??? ?? trace
   logging:
     level:
