@@ -6,6 +6,8 @@
 5. Spring Data JPA
 6. Thymeleaf
 
+   
+
 # 게시판 주요 기능
 1. 게시글 작성 `(/board/save)`
    - 단 건의 게시글을 등록할 수 있습니다.
